@@ -131,6 +131,8 @@ document.querySelector('.btn').addEventListener('click', (e) => {
     isValid = validateStart(start);
     isValid = validate(start);
 
+    const parent = document.querySelector('.error');
+
     if (isValid) {
     const student = {
         surname: surname.value,
@@ -141,7 +143,7 @@ document.querySelector('.btn').addEventListener('click', (e) => {
         start: parseInt(start.value),
     };
 
-    parent.textContent = '';
+    parent.textContent = "";
     birthDate.value = "";
     faculty.value = "";
     lastname.value = "";
@@ -296,33 +298,3 @@ filterBtn.addEventListener('click', (e) => {
 
     renderStudentsTable(filterStudents);
 })
-// .addField("#phone", [
-//     {
-//         validator: (value) => {
-//             const phone = selector.inputmask.unmaskedvalue()
-//             return Boolean(Number(phone) && phone.length > 0)
-//         },
-
-//         errorMessage: 'Вы не ввели телефон'
-//     },
-//     {
-//         validator: (value) => {
-//             const phone = selector.inputmask.unmaskedvalue()
-//             return Boolean(Number(phone) && phone.length === 10)
-//         },
-        
-//         errorMessage: 'Вы не ввели телефон'
-//     },
-// ])
-
-// .addField("#email", [
-//     {
-//         rule: 'required',
-//         errorMessage: 'Вы не ввели e-mail'
-//     },
-//     {
-//         rule: 'email',
-//         errorMessage: 'Неверно указана почта'
-//     },
-// ])
-
