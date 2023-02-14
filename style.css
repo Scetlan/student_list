@@ -1,0 +1,121 @@
+body {
+    width: 700px;
+    margin: auto;
+}
+
+.blog {
+    display: flex;
+}
+
+.filter {
+    padding: 10px 5px;
+    background-color: rgb(40, 115, 138);
+    color: #fff;
+}
+
+.filter-btn {
+    color: #fff;
+    background-color: rgb(135, 173, 184);
+    border: 2px solid rgb(32, 96, 115);
+    border-radius: 10px;
+
+    padding: 5px 10px;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    padding: 12px;
+}
+
+.table {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.head {
+    background-color: rgb(40, 115, 138);
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    
+    margin: auto;
+}
+
+input {
+    width: 21%;
+    padding: 4px 10px;
+    margin-bottom: 2px;
+
+    cursor: pointer;
+
+    border: 2px solid rgb(40, 115, 138);
+    border-radius: 20px;
+}
+
+.intut {
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+
+    padding: 10px;
+}
+
+::placeholder {
+    color: rgb(121, 124, 124);
+}
+
+td {
+    padding: 5px 5px;
+}
+
+.btn {
+    width: 200px;
+    font-size: 19px;
+
+    padding: 10px 10px;
+
+    color: #fff;
+    background-color: rgb(57, 155, 184);
+    border: 2px solid rgb(50, 136, 163);
+    border-radius: 10px;
+}
+
+.box {
+    width: 100%;
+    height: 65px;
+
+    margin-bottom: 15px;
+}
+
+.error {
+    font-weight: bold;
+
+    padding: 0 15px;
+
+    color: red;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1>Список студентов</h1>
+            <div class="blog">
+                <div class="filter">
+                    <h2>Фильтр</h2>
+                    <input class="filter-name" type="text" placeholder="Фамилия Имя Отчество">
+                    <input class="filter-faculty" type="text" placeholder="Факультет">
+                    <input class="filter-start" type="number" placeholder="Год начала">
+                    <input class="filter-end" type="number" placeholder="Год окончания">
+                    <button class="filter-btn">Поиск</button>
+                </div>
+            </div>
+        </div>
+        <table class="table" id="table">
+            <thead class="head">
+                <tr class="contents">
+                    <th class="head-name"><a href="#">Фамилия Имя Отчество</a></th>
+                    <th class="head-faculty"><a href="#">Факультет</a></th>
+                    <th class="head-datebirth"><a href="#">Дата рождения</a></th>
+                    <th class="head-start"><a href="#">Начало обучения</a></th>
+                </tr>
+            </thead>
+        </table>
+        <form class="form" id="form">
+            <label for="title">
+                <h2 id="title">Добавить студента</h2>
+            </label>
+            <div class="box">
+                <input type="text" name="surname" class="intut surname" placeholder="Фамилия" required pattern="[a-z]+">
+                <div class="error"></div>
+            </div>
+            <div class="box">
+                <input type="text" name="name" class="intut name" placeholder="Имя" required pattern="[a-z]+">
+                <div class="error"></div>
+            </div>
+            <div class="box">
+                <input type="text" name="lastname" class="intut lastname" placeholder="Отчество" required pattern="[a-z]+">
+                <div class="error"></div>
+            </div>
+            <div class="box">
+                <input type="text" name="faculty" class="intut faculty" placeholder="Факультет" required pattern="[a-z]+">
+                <div class="error"></div>
+            </div>
+            <div class="box">
+                <input type="date" name="birthDate" class="intut birthDate" placeholder="Дата рождения" required>
+                <div class="error"></div>
+            </div>
+            <div class="box">
+                <input type="number" name="start" class="intut start" min="1900-01-01" placeholder="Начало обучения"
+                    required pattern="[0-9]+">
+                    <div class="error"></div>
+            </div>
+            <button type="submit" class="btn">Добавить студента</button>
+        </form>
+        </div>
+    </section>
+    <script src="/main.js"></script>
+</body>
+
+</html>

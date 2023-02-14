@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>валидация</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <form class="form" id="form">
+        <label for="title">
+            <h2 id="title">Добавить студента</h2>
+        </label>
+        <div class="box">
+            <input type="text" name="surname" class="intut surname" placeholder="Фамилия">
+            <div class="error"></div>
+        </div>
+        <div class="box">
+            <input type="text" name="name" class="intut name" placeholder="Имя">
+            <div class="error"></div>
+        </div>
+        <div class="box">
+            <input type="text" name="lastname" class="intut lastname" placeholder="Отчество">
+            <div class="error"></div>
+        </div>
+        <div class="box">
+            <input type="text" name="faculty" class="intut faculty" placeholder="Факультет">
+            <div class="error"></div>
+        </div>
+        <div class="box">
+            <input type="date" name="birthDate" class="intut birthDate" placeholder="Дата рождения" >
+            <div class="error"></div>
+        </div>
+        <div class="box">
+            <input type="number" name="start" class="intut start"  placeholder="Начало обучения"
+                required>
+            <div class="error"></div>
+        </div>
+        <button type="submit" class="btn">Добавить студента</button>
+    </form>
+    <script src="./js.js"></script>
+</body>
+</html>
